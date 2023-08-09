@@ -7,6 +7,7 @@ let btnDelete
 let checkBox  
 let state
 let izy
+let editContainer = document.querySelector('.edit-container')
 function ajouter(inputValue){
     li = document.createElement('div')
     li.classList.add('li')
@@ -59,6 +60,7 @@ ajout.addEventListener('click',function(){
             if(this.checked){
                 ok.innerHTML = "Completed"
                 ok.style.color="green"
+                
             }
             else{
                 ok.innerHTML = "Uncompleted"
@@ -66,7 +68,7 @@ ajout.addEventListener('click',function(){
             }
           
         })
-        if(li.textContent==""){
+        if(ul.innerHTML==""){
             todoList.style.display="none" 
         }
         else{
@@ -85,14 +87,22 @@ ajout.addEventListener('click',function(){
 
         
         btnEdit.addEventListener('click',function(){
+            editContainer.style.display = "flex"
             liActuel = this.closest('.list')
             izy = liActuel.querySelector(':nth-child(2)')
             inputMod.value = izy.textContent
             inputMod.focus()
             save.addEventListener('click',function(){
+                if(inputMod.value==""){
+                    inputMod.style.outline = "solid 1px red!important"
+                }
+                  
+                else{
                     izy.innerHTML = ""
-                    izy.innerHTML = inputMod.value        
-                    
+                    izy.innerHTML = inputMod.value 
+                    inputMod.value = ""   
+                    editContainer.style.display = "none"  
+                }
          }) 
     
         })
