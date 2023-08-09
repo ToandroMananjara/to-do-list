@@ -117,9 +117,9 @@ button{
 }
 .todo-list{
     display: flex;
-    border-radius: 0 0 5px 5px;
-    border-top: none;
     display: none;
+    border-top: 1px solid #333333;
+    border-radius: 0 0 5px 5px;
     margin:0 ;
     padding-right: 10px;
 }
@@ -157,7 +157,7 @@ button{
 }
 .list{
     display: flex;
-    border-bottom: solid 1px black;
+    border-bottom: solid 1px #333333;
     padding-right: 5px;
 }
 .supprimer,.modifier{
@@ -171,8 +171,10 @@ button{
     color:  #007BFF;
 }
 .titre{
-    display: flex;
     width: 100%;
+    display: flex;
+    
+    padding-top: 10px;
 }
 #check-box{
     cursor: pointer;
@@ -182,11 +184,11 @@ button{
     margin: 0;
     text-align: left;
     padding-left: 10px;
-
+    
 }
 .state{
      text-align: center; 
-    margin: 0;
+     margin: 0;
     /* margin-right: 30px; */
     width: 30%;
     display: flex;
