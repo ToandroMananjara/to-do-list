@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>To do list</title>
+</head>
+<body>
+
+    <div class="container">
+        <h1>To do list <i class="fa-solid fa-pencil"></i></h1>
+        <div class="input-todo-item">
+                <div class="label">
+                    <label for="">New Todo :</label><br>
+                </div>
+                <div class="input">
+                    <input type="text" id="input-to-do">
+                    <button id="add" >Add</button>
+                </div>
+        </div>
+        <div class="edit-container">
+            <label for="" class="label-edit">Edit:</label>
+            <input type="text" class="edit-input">
+            <button id="edit-save">Save</button>
+
+        </div>
+        <div class="todo-list">
+            <div class="titre">
+                <h5 class="title">Title</h5>
+                <h5 class="state">Status</h5>
+                <h5 class="del-mod">Edit/Delete</h5>
+            </div>
+            
+            <ul>
+            
+            </ul>
+        </div>
+
+    </div>
+    <script src="./assets/js/index.js"></script>
+</body>
+</html>
