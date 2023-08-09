@@ -131,7 +131,7 @@ button{
     width: 10%;
 }
 #add,#edit-save{
-    width: 70px;
+    width: 100px;
     margin-left: 5px;
 }
 #add{
